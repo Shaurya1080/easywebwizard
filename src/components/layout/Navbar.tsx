@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,9 +21,12 @@ export function Navbar() {
   }, []);
 
   const navigation = [
-    { name: "Features", href: "/#features" },
-    { name: "Templates", href: "/templates" },
-    { name: "Pricing", href: "/#pricing" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Case Studies", href: "/case-studies" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -31,7 +34,7 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm py-3"
+          ? "bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm py-3"
           : "bg-transparent py-5"
       )}
     >
@@ -39,8 +42,8 @@ export function Navbar() {
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-600">
-                WebEasy
+              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800">
+                TechPro
               </span>
             </Link>
           </div>
@@ -63,14 +66,9 @@ export function Navbar() {
             ))}
           </div>
 
-          <div className="hidden md:flex md:items-center md:space-x-3">
-            <Link to="/login">
-              <Button variant="outline" className="rounded-full px-5">
-                Log in
-              </Button>
-            </Link>
-            <Link to="/login?signup=true">
-              <Button className="rounded-full px-5">Sign up</Button>
+          <div className="hidden md:flex md:items-center">
+            <Link to="/contact">
+              <Button className="rounded-md">Get a Free Consultation</Button>
             </Link>
           </div>
 
@@ -104,17 +102,9 @@ export function Navbar() {
                   {item.name}
                 </Link>
               ))}
-              <div className="flex flex-col space-y-3 pt-3">
-                <Link to="/login" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button variant="outline" className="w-full rounded-full">
-                    Log in
-                  </Button>
-                </Link>
-                <Link
-                  to="/login?signup=true"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <Button className="w-full rounded-full">Sign up</Button>
+              <div className="pt-3">
+                <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button className="w-full">Get a Free Consultation</Button>
                 </Link>
               </div>
             </div>
