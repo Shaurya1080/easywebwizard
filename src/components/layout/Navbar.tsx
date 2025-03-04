@@ -43,7 +43,7 @@ export function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800">
-                TechPro
+                Pixel Sync
               </span>
             </Link>
           </div>

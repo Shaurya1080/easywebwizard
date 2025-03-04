@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Container } from "@/components/ui/Container";
 import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
@@ -43,7 +42,7 @@ export function Footer() {
           <div className="md:col-span-3 lg:col-span-4">
             <Link to="/" className="inline-block">
               <span className="text-xl font-bold bg-clip-text text-white">
-                TechPro
+                Pixel Sync
               </span>
             </Link>
             <p className="mt-4 text-sm text-gray-400 max-w-xs">
@@ -108,7 +107,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-gray-800 pt-8 flex flex-col md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-gray-400">
-            &copy; {currentYear} TechPro. All rights reserved.
+            &copy; {currentYear} Pixel Sync. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <p className="text-sm text-gray-400">
