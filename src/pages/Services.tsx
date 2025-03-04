@@ -6,103 +6,84 @@ import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Link } from "react-router-dom";
 import { 
-  Cloud, 
-  Lock, 
-  Code, 
-  Terminal, 
-  Database, 
-  Users, 
-  Server, 
-  Laptop, 
-  Shield,
-  Network
+  Globe, 
+  Smartphone, 
+  Gamepad, 
+  Share2, 
+  Palette
 } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      id: "cloud",
-      title: "Cloud Computing Solutions",
-      description: "Transform your IT infrastructure with our comprehensive cloud services. We help businesses migrate to the cloud, optimize cloud resources, and manage cloud environments for maximum efficiency and cost-effectiveness.",
+      id: "web",
+      title: "Web Development",
+      description: "Build powerful, responsive, and user-friendly websites that drive results. Our web development team crafts tailored solutions from simple corporate websites to complex web applications.",
       features: [
-        "Cloud Migration & Implementation",
-        "Hybrid Cloud Solutions",
-        "Cloud Security & Compliance",
-        "Cloud Infrastructure Optimization",
-        "Disaster Recovery & Backup"
+        "Custom Website Development",
+        "E-commerce Solutions",
+        "CMS Implementation",
+        "Web Application Development",
+        "Website Maintenance & Support"
       ],
-      icon: Cloud,
-      image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      icon: Globe,
+      image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
     },
     {
-      id: "security",
-      title: "Cybersecurity Solutions",
-      description: "Protect your business from cyber threats with our comprehensive security services. We provide robust security solutions that safeguard your data, systems, and networks from increasingly sophisticated cyber attacks.",
+      id: "app",
+      title: "App Development",
+      description: "Create stunning mobile applications that engage users and streamline operations. We develop native and cross-platform apps for iOS and Android with focus on performance and user experience.",
       features: [
-        "Security Assessments & Audits",
-        "Threat Detection & Response",
-        "Network Security",
-        "Data Protection & Encryption",
-        "Security Training & Awareness"
+        "iOS & Android Native Apps",
+        "Cross-Platform Development",
+        "UI/UX Design",
+        "App Testing & QA",
+        "App Maintenance & Updates"
       ],
-      icon: Shield,
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      icon: Smartphone,
+      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
     },
     {
-      id: "development",
-      title: "Software Development",
-      description: "Create custom software solutions tailored to your unique business needs. Our experienced developers build scalable, secure, and user-friendly applications that streamline operations and drive growth.",
+      id: "game",
+      title: "Game Development",
+      description: "Bring your game ideas to life with our professional game development services. From casual mobile games to immersive experiences, we create engaging games across multiple platforms.",
       features: [
-        "Custom Application Development",
-        "Web & Mobile Applications",
-        "API Integration & Development",
-        "Legacy System Modernization",
-        "Quality Assurance & Testing"
+        "2D & 3D Game Development",
+        "Mobile Game Development",
+        "Unity & Unreal Engine",
+        "Game Design & Storytelling",
+        "Multiplayer & Online Gaming"
       ],
-      icon: Code,
-      image: "https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      icon: Gamepad,
+      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
     },
     {
-      id: "consulting",
-      title: "IT Consulting",
-      description: "Gain strategic insights and expert guidance to align your technology investments with business objectives. Our consultants help you navigate complex IT decisions and develop technology roadmaps for success.",
+      id: "social",
+      title: "Social Media Management",
+      description: "Maximize your brand's social media presence with our comprehensive management services. We help you engage with your audience, grow your following, and drive conversions through strategic content.",
       features: [
-        "IT Strategy & Planning",
-        "Digital Transformation",
-        "Technology Assessment",
-        "IT Governance & Compliance",
-        "Vendor Selection & Management"
+        "Content Creation & Curation",
+        "Social Media Strategy",
+        "Community Management",
+        "Analytics & Reporting",
+        "Influencer Collaboration"
       ],
-      icon: Users,
-      image: "https://images.unsplash.com/photo-1583321500900-82807e458f3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      icon: Share2,
+      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
     },
     {
-      id: "managed",
-      title: "Managed IT Services",
-      description: "Focus on your core business while we handle your IT infrastructure. Our managed IT services provide proactive monitoring, maintenance, and support to ensure your systems run smoothly and efficiently.",
+      id: "ads",
+      title: "Ads Designing",
+      description: "Create compelling visual advertisements that capture attention and drive conversions. Our design team crafts stunning ad creatives for digital platforms, print media, and more.",
       features: [
-        "24/7 Monitoring & Support",
-        "Network Management",
-        "Server & Desktop Management",
-        "Help Desk Services",
-        "IT Asset Management"
+        "Social Media Ad Designs",
+        "Google Display Network Ads",
+        "Banner & Billboard Designs",
+        "Print Advertisement Design",
+        "Animation & Video Ads"
       ],
-      icon: Server,
-      image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-    },
-    {
-      id: "data",
-      title: "Data Management",
-      description: "Harness the power of your data with our comprehensive data management solutions. We help businesses store, protect, analyze, and visualize data for better decision-making and business intelligence.",
-      features: [
-        "Database Design & Management",
-        "Data Warehousing",
-        "Business Intelligence",
-        "Data Analytics & Visualization",
-        "Big Data Solutions"
-      ],
-      icon: Database,
-      image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      icon: Palette,
+      image: "https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
     },
   ];
 
@@ -116,7 +97,7 @@ const Services = () => {
             <FadeIn>
               <h1 className="text-4xl font-bold sm:text-5xl">Our Services</h1>
               <p className="mt-6 text-xl text-blue-100 max-w-3xl">
-                Comprehensive IT solutions tailored to your business needs. We combine technical expertise with industry knowledge to deliver results that drive growth.
+                Specialized digital solutions to help your business thrive in today's competitive marketplace. We focus on delivering quality and innovation in everything we do.
               </p>
             </FadeIn>
           </Container>

@@ -2,44 +2,38 @@
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Link } from "react-router-dom";
-import { ArrowRight, Cloud, Lock, Code, Terminal, Database, Users } from "lucide-react";
+import { ArrowRight, Globe, Smartphone, Gamepad, Share2, Palette } from "lucide-react";
 
 const services = [
   {
-    name: "Cloud Solutions",
-    description: "Scalable, secure and reliable cloud infrastructure and migration services.",
-    icon: Cloud,
-    link: "/services#cloud",
+    name: "Web Development",
+    description: "Custom, responsive, and SEO-friendly websites tailored to your business needs.",
+    icon: Globe,
+    link: "/services#web",
   },
   {
-    name: "Cybersecurity",
-    description: "Comprehensive security solutions to protect your business from threats.",
-    icon: Lock,
-    link: "/services#security",
+    name: "App Development",
+    description: "Native and cross-platform mobile applications for iOS and Android.",
+    icon: Smartphone,
+    link: "/services#app",
   },
   {
-    name: "Software Development",
-    description: "Custom software solutions tailored to your specific business needs.",
-    icon: Code,
-    link: "/services#development",
+    name: "Game Development",
+    description: "Engaging and interactive games for mobile, desktop, and web platforms.",
+    icon: Gamepad,
+    link: "/services#game",
   },
   {
-    name: "IT Consulting",
-    description: "Expert guidance to align your technology with business objectives.",
-    icon: Users,
-    link: "/services#consulting",
+    name: "Social Media Management",
+    description: "Strategic content creation and management for all social media platforms.",
+    icon: Share2,
+    link: "/services#social",
   },
   {
-    name: "Managed IT Services",
-    description: "End-to-end IT management to ensure your systems run smoothly.",
-    icon: Terminal,
-    link: "/services#managed",
-  },
-  {
-    name: "Data Management",
-    description: "Data storage, analysis, and visualization solutions for informed decisions.",
-    icon: Database,
-    link: "/services#data",
+    name: "Ads Designing",
+    description: "Eye-catching and conversion-focused designs for digital and print advertising.",
+    icon: Palette,
+    link: "/services#ads",
   },
 ];
 
@@ -55,12 +49,12 @@ export function Services() {
           </FadeIn>
           <FadeIn delay={100}>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Comprehensive IT Solutions
+              Specialized Digital Solutions
             </p>
           </FadeIn>
           <FadeIn delay={200}>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We offer a wide range of IT services to help your business leverage technology for growth and innovation.
+              We offer a focused range of digital services to help your business thrive in the modern marketplace.
             </p>
           </FadeIn>
         </div>
