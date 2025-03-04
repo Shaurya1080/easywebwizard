@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <div className="relative pt-20 overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-gray-900/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-black/80" />
         <img 
           src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
           alt="Technology background" 
@@ -21,7 +21,7 @@ export function Hero() {
           <FadeIn>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
               Innovative IT Solutions
-              <span className="block text-blue-400">For Modern Businesses</span>
+              <span className="block text-purple-400">For Modern Businesses</span>
             </h1>
           </FadeIn>
           
@@ -34,7 +34,7 @@ export function Hero() {
           <FadeIn delay={300}>
             <div className="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
               <Link to="/contact">
-                <Button size="lg" className="rounded-md text-base">
+                <Button size="lg" className="rounded-md text-base bg-purple-600 hover:bg-purple-700">
                   Get a Free Consultation
                 </Button>
               </Link>

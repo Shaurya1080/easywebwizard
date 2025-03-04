@@ -10,7 +10,9 @@ import {
   Smartphone, 
   Gamepad, 
   Share2, 
-  Palette
+  Palette,
+  Briefcase,
+  BarChart
 } from "lucide-react";
 
 const Services = () => {
@@ -85,6 +87,34 @@ const Services = () => {
       icon: Palette,
       image: "https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
     },
+    {
+      id: "digital-marketing",
+      title: "Digital Marketing",
+      description: "Drive traffic, leads, and conversions with our data-driven digital marketing services. Our strategies are tailored to your business goals and target audience for maximum impact.",
+      features: [
+        "SEO & Content Marketing",
+        "PPC Campaign Management",
+        "Email Marketing",
+        "Conversion Rate Optimization",
+        "Marketing Analytics & Reporting"
+      ],
+      icon: BarChart,
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      id: "branding",
+      title: "Branding & Identity",
+      description: "Build a strong and recognizable brand that resonates with your target audience. Our branding services help you establish a unique identity that sets you apart from competitors.",
+      features: [
+        "Brand Strategy Development",
+        "Logo & Visual Identity Design",
+        "Brand Guidelines Creation",
+        "Brand Messaging & Positioning",
+        "Brand Collateral Design"
+      ],
+      icon: Briefcase,
+      image: "https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    }
   ];
 
   return (
@@ -92,11 +122,11 @@ const Services = () => {
       <Navbar />
       <main className="flex-grow pt-20">
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-24">
+        <div className="bg-gradient-to-r from-gray-900 to-black text-white py-24">
           <Container>
             <FadeIn>
               <h1 className="text-4xl font-bold sm:text-5xl">Our Services</h1>
-              <p className="mt-6 text-xl text-blue-100 max-w-3xl">
+              <p className="mt-6 text-xl text-gray-300 max-w-3xl">
                 Specialized digital solutions to help your business thrive in today's competitive marketplace. We focus on delivering quality and innovation in everything we do.
               </p>
             </FadeIn>
@@ -104,7 +134,7 @@ const Services = () => {
         </div>
 
         {/* Services List */}
-        <div className="py-16">
+        <div className="py-16 bg-gray-50">
           <Container>
             {services.map((service, index) => (
               <div 
@@ -124,7 +154,7 @@ const Services = () => {
                   </FadeIn>
                   
                   <FadeIn delay={200} className={index % 2 === 0 ? "order-2" : "order-2 lg:order-1"}>
-                    <div className="inline-flex h-16 w-16 items-center justify-center rounded-lg bg-blue-50 text-blue-600 mb-6">
+                    <div className="inline-flex h-16 w-16 items-center justify-center rounded-lg bg-purple-50 text-purple-600 mb-6">
                       <service.icon className="h-8 w-8" />
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">{service.title}</h2>
@@ -135,7 +165,7 @@ const Services = () => {
                       <ul className="mt-4 space-y-3">
                         {service.features.map((feature) => (
                           <li key={feature} className="flex items-start">
-                            <span className="flex-shrink-0 h-6 w-6 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 mr-3">
+                            <span className="flex-shrink-0 h-6 w-6 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 mr-3">
                               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                               </svg>
@@ -148,7 +178,7 @@ const Services = () => {
                     
                     <div className="mt-8">
                       <Link to="/contact">
-                        <Button size="lg">Get Started</Button>
+                        <Button size="lg" className="bg-black hover:bg-gray-800 text-white">Get Started</Button>
                       </Link>
                     </div>
                   </FadeIn>
