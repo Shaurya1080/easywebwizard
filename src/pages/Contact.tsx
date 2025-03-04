@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -9,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Phone, Mail, MapPin, Clock, Users, MessageSquare } from "lucide-react";
 import { toast } from "sonner";
+import { submitContactForm } from "@/services/contactService";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,13 +26,12 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      await submitContactForm(formData);
       toast.success("Message sent successfully!", {
         description: "We'll get back to you as soon as possible.",
       });
@@ -43,7 +42,14 @@ const Contact = () => {
         company: "",
         message: ""
       });
-    }, 1500);
+    } catch (error) {
+      toast.error("Failed to send message", {
+        description: "Please try again later or contact us directly."
+      });
+      console.error("Error submitting form:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
