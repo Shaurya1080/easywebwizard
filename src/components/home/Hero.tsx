@@ -39,7 +39,7 @@ export function Hero() {
                 </Button>
               </Link>
               <Link to="/services">
-                <Button size="lg" variant="outline" className="rounded-md text-white border-white hover:bg-white/10 text-base">
+                <Button size="lg" className="rounded-md text-base bg-purple-600 hover:bg-purple-700">
                   Explore Our Services
                 </Button>
               </Link>
