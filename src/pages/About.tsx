@@ -13,7 +13,7 @@ const About = () => {
       name: "Shaurya Tripathi",
       position: "CEO & Founder",
       bio: "With a vision for innovation and a passion for technology, Shaurya leads Pixel Sync with strategic insight and a commitment to excellence.",
-      image: "/lovable-uploads/e0876fa0-f04d-4d75-84de-f550f28cef5e.png"
+      image: "/lovable-uploads/5473e455-bdb7-4d55-9d7e-c224f41cfe8c.png"
     },
     {
       name: "Khushi Agarwal",
