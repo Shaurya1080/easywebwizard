@@ -9,16 +9,16 @@ import { Button } from "@/components/ui/button";
 const About = () => {
   const leadershipTeam = [
     {
-      name: "Shaurya Tripathi",
-      position: "CEO & Founder",
-      bio: "With a vision for innovation and a passion for technology, Shaurya leads Pixel Sync with strategic insight and a commitment to excellence.",
-      image: "/lovable-uploads/e0876fa0-f04d-4d75-84de-f550f28cef5e.png"
-    },
-    {
       name: "Khushi Agarwal",
       position: "Co-Founder",
       bio: "Khushi brings creative direction and business acumen to Pixel Sync, helping shape our client-centered approach to digital solutions.",
       image: "/lovable-uploads/10fa6faa-06eb-407d-9c06-a2d82b8a446b.png"
+    },
+    {
+      name: "Shaurya Tripathi",
+      position: "CEO & Founder",
+      bio: "With a vision for innovation and a passion for technology, Shaurya leads Pixel Sync with strategic insight and a commitment to excellence.",
+      image: "/lovable-uploads/e0876fa0-f04d-4d75-84de-f550f28cef5e.png"
     },
     {
       name: "Aradhyaa Maavi",
