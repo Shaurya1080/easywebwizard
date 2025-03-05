@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -78,8 +79,8 @@ const Contact = () => {
                     <Phone className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">Call Us</h3>
-                  <p className="mt-2 text-lg text-gray-600">+1 (555) 123-4567</p>
-                  <p className="mt-1 text-gray-500">Monday-Friday: 9AM-6PM EST</p>
+                  <p className="mt-2 text-lg text-gray-600">+91 9555893606</p>
+                  <p className="mt-1 text-gray-500">Monday-Friday: 9AM-6PM IST</p>
                 </div>
               </FadeIn>
 
@@ -89,7 +90,7 @@ const Contact = () => {
                     <Mail className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">Email Us</h3>
-                  <p className="mt-2 text-lg text-gray-600">info@techpro.com</p>
+                  <p className="mt-2 text-lg text-gray-600">shauryasd123@gmail.com</p>
                   <p className="mt-1 text-gray-500">We'll respond within 24 hours</p>
                 </div>
               </FadeIn>
@@ -100,8 +101,8 @@ const Contact = () => {
                     <MapPin className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">Visit Us</h3>
-                  <p className="mt-2 text-lg text-gray-600">123 Tech Avenue</p>
-                  <p className="mt-1 text-gray-500">San Francisco, CA 94107</p>
+                  <p className="mt-2 text-lg text-gray-600">Sancoale, Goa</p>
+                  <p className="mt-1 text-gray-500">India</p>
                 </div>
               </FadeIn>
             </div>
@@ -205,7 +206,7 @@ const Contact = () => {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full md:w-auto"
+                      className="w-full md:w-auto bg-blue-600 hover:bg-blue-700"
                     >
                       {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
@@ -217,18 +218,18 @@ const Contact = () => {
                 <div className="h-full">
                   <h2 className="text-3xl font-bold text-gray-900">Our Location</h2>
                   <p className="mt-4 text-lg text-gray-600">
-                    Visit our headquarters in the heart of San Francisco's tech district.
+                    Visit our headquarters in Sancoale, Goa, India.
                   </p>
                   <div className="mt-8 h-[400px] rounded-xl overflow-hidden shadow-sm bg-white border border-gray-200">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.29936410896!2d-122.43913219134224!3d37.77088511118676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1679430247387!5m2!1sen!2sus"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30764.915342713675!2d73.88163621562497!3d15.383254699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfba10600ca6c3%3A0xf989f9a2db006ce7!2sSancoale%2C%20Goa!5e0!3m2!1sen!2sin!4v1691428954015!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="TechPro Office Location"
+                      title="Pixel Sync Office Location"
                     ></iframe>
                   </div>
                 </div>
