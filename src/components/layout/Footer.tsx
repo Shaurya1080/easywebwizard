@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Container } from "@/components/ui/Container";
 import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
@@ -41,7 +42,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-6 lg:grid-cols-12">
           <div className="md:col-span-3 lg:col-span-4">
             <Link to="/" className="inline-block">
-              <span className="text-xl font-bold bg-clip-text text-white">
+              <span className="text-xl font-bold text-white">
                 Pixel Sync
               </span>
             </Link>
@@ -90,16 +91,16 @@ export function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-gray-400 mr-3 mt-0.5" />
                 <span className="text-sm text-gray-400">
-                  123 Tech Avenue, San Francisco, CA 94107
+                  Sancoale, Goa
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-gray-400 mr-3" />
-                <span className="text-sm text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-sm text-gray-400">+91 9555893606</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-3" />
-                <span className="text-sm text-gray-400">info@techpro.com</span>
+                <span className="text-sm text-gray-400">shauryasd123@gmail.com</span>
               </li>
             </ul>
           </div>
