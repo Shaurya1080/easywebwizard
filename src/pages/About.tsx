@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
@@ -10,28 +9,22 @@ import { Button } from "@/components/ui/button";
 const About = () => {
   const leadershipTeam = [
     {
-      name: "John Smith",
+      name: "Shaurya Tripathi",
       position: "CEO & Founder",
-      bio: "With over 20 years of experience in the IT industry, John has led multiple Fortune 500 technology initiatives.",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80"
+      bio: "With a vision for innovation and a passion for technology, Shaurya leads Pixel Sync with strategic insight and a commitment to excellence.",
+      image: "/lovable-uploads/e0876fa0-f04d-4d75-84de-f550f28cef5e.png"
     },
     {
-      name: "Lisa Chen",
-      position: "CTO",
-      bio: "Lisa is a technology pioneer with expertise in cloud architecture, AI, and enterprise solutions.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80"
+      name: "Khushi Agarwal",
+      position: "Co-Founder",
+      bio: "Khushi brings creative direction and business acumen to Pixel Sync, helping shape our client-centered approach to digital solutions.",
+      image: "/lovable-uploads/10fa6faa-06eb-407d-9c06-a2d82b8a446b.png"
     },
     {
-      name: "Mark Johnson",
-      position: "Head of Cybersecurity",
-      bio: "Mark has protected critical infrastructure for government agencies and global corporations for over 15 years.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80"
-    },
-    {
-      name: "Sarah Williams",
-      position: "Director of Client Services",
-      bio: "Sarah ensures our clients receive exceptional service and that their technology needs are fully addressed.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80"
+      name: "Aradhyaa Maavi",
+      position: "Marketing Head",
+      bio: "Aradhyaa drives our marketing initiatives with innovative strategies that connect our solutions with businesses seeking digital transformation.",
+      image: "/lovable-uploads/e4d20f0a-92c6-4dee-bb94-0c2f12093413.png"
     }
   ];
 
@@ -212,18 +205,18 @@ const About = () => {
               </div>
             </FadeIn>
 
-            <div className="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-3">
               {leadershipTeam.map((member, index) => (
                 <FadeIn key={member.name} delay={200 + index * 100}>
                   <div className="text-center">
-                    <div className="mx-auto h-40 w-40 rounded-full overflow-hidden">
+                    <div className="mx-auto h-60 w-60 rounded-full overflow-hidden">
                       <img 
                         src={member.image} 
                         alt={member.name}
                         className="h-full w-full object-cover"
                       />
                     </div>
-                    <h3 className="mt-6 text-lg font-semibold text-gray-900">{member.name}</h3>
+                    <h3 className="mt-6 text-xl font-semibold text-gray-900">{member.name}</h3>
                     <p className="text-blue-600">{member.position}</p>
                     <p className="mt-3 text-gray-600">{member.bio}</p>
                   </div>
