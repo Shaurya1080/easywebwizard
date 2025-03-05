@@ -7,25 +7,53 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    quote: "TechPro's cloud migration services transformed our operations. We experienced zero downtime during the transition and have seen a 40% reduction in IT costs.",
+    quote: "The web development team at Pixel Sync created an amazing website that perfectly represents our brand. The site is not only beautiful but also drives real results for our business.",
     author: "Sarah Johnson",
-    title: "CTO, GreenTech Innovations",
+    title: "CEO, GreenTech Innovations",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
   },
   {
     id: 2,
-    quote: "The cybersecurity solutions provided by TechPro have given us peace of mind. Their proactive approach has prevented several potential breaches.",
+    quote: "Their mobile app development skills are exceptional. They delivered a cross-platform app that our customers love, with intuitive design and flawless functionality.",
     author: "Michael Chen",
-    title: "IT Director, Financial Solutions Inc.",
+    title: "Product Manager, Financial Solutions Inc.",
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
   },
   {
     id: 3,
-    quote: "Working with TechPro on our custom software development project was a game-changer. They delivered on time and exceeded our expectations.",
+    quote: "The game they developed for our educational platform has been a massive hit with students. Engaging, fun, and educational - exactly what we needed.",
     author: "Emily Rodriguez",
-    title: "COO, Retail Innovations",
+    title: "Education Director, Learning Innovations",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
   },
+  {
+    id: 4,
+    quote: "Their social media management transformed our online presence. Engagement is up, followers have doubled, and we're seeing real conversion from social channels.",
+    author: "David Thompson",
+    title: "Marketing Director, Retail Giants",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
+  },
+  {
+    id: 5,
+    quote: "The ad designs created by Pixel Sync are stunning and effective. Our campaign conversion rates have never been higher.",
+    author: "Jennifer Lee",
+    title: "Advertising Manager, Consumer Goods Co.",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
+  },
+  {
+    id: 6,
+    quote: "Their digital marketing strategy completely transformed our online performance. SEO rankings improved dramatically and our lead generation has never been better.",
+    author: "Robert Wilson",
+    title: "Growth Director, SaaS Enterprise",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
+  },
+  {
+    id: 7,
+    quote: "The branding work Pixel Sync did for our company was transformative. They captured our essence perfectly and created a cohesive identity that resonates with our audience.",
+    author: "Amanda Parker",
+    title: "Brand Manager, New Ventures Inc.",
+    image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80"
+  }
 ];
 
 export function Testimonials() {

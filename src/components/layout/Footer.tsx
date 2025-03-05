@@ -19,10 +19,13 @@ export function Footer() {
     {
       title: "Services",
       links: [
-        { name: "Cloud Solutions", href: "/services#cloud" },
-        { name: "Cybersecurity", href: "/services#security" },
-        { name: "Software Development", href: "/services#development" },
-        { name: "IT Consulting", href: "/services#consulting" },
+        { name: "Web Development", href: "/services#web" },
+        { name: "App Development", href: "/services#app" },
+        { name: "Game Development", href: "/services#game" },
+        { name: "Social Media Management", href: "/services#social" },
+        { name: "Ads Designing", href: "/services#ads" },
+        { name: "Digital Marketing", href: "/services#digital-marketing" },
+        { name: "Branding & Identity", href: "/services#branding" },
       ],
     },
     {
@@ -47,7 +50,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-gray-400 max-w-xs">
-              Empowering businesses through innovative IT solutions. We help you transform, scale, and secure your technology infrastructure.
+              Empowering businesses through innovative digital solutions. We help you transform, scale, and secure your digital presence.
             </p>
             <div className="mt-6 flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
