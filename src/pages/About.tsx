@@ -3,7 +3,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/animations/FadeIn";
-import { Briefcase, Award, Heart, Code, Globe, Smartphone, Shield } from "lucide-react";
+import { Briefcase, Award, Heart, Code, Globe, Smartphone, Shield, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
