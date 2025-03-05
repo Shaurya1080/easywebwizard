@@ -3,7 +3,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/animations/FadeIn";
-import { Briefcase, Award, Heart, Code, Globe, Smartphone, Shield, Phone, Mail, MapPin } from "lucide-react";
+import { Briefcase, Award, Heart, Code, Globe, Smartphone, Shield, Phone, Mail, MapPin, Gamepad, Share2, Palette, BarChart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -63,18 +63,32 @@ const About = () => {
       icon: Smartphone
     },
     {
-      title: "Cybersecurity Solution",
-      category: "IT Security",
-      description: "Comprehensive security infrastructure for a financial institution that protects sensitive customer data.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-      icon: Shield
+      title: "Educational Game",
+      category: "Game Development",
+      description: "An interactive educational game helping children learn mathematics through fun puzzles and challenges.",
+      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+      icon: Gamepad
     },
     {
-      title: "Custom CRM System",
-      category: "Software Development",
-      description: "Tailor-made customer relationship management system for a growing business with advanced analytics.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-      icon: Code
+      title: "Social Media Campaign",
+      category: "Social Media Management",
+      description: "A comprehensive social media strategy that increased engagement by 150% for a retail brand.",
+      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+      icon: Share2
+    },
+    {
+      title: "Digital Ad Series",
+      category: "Ads Designing",
+      description: "A visually stunning ad campaign that increased conversion rates by 75% across multiple platforms.",
+      image: "https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+      icon: Palette
+    },
+    {
+      title: "SEO & Content Strategy",
+      category: "Digital Marketing",
+      description: "Comprehensive digital marketing strategy that improved organic traffic by 200% in six months.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+      icon: BarChart
     }
   ];
 
@@ -158,7 +172,7 @@ const About = () => {
               </div>
             </FadeIn>
 
-            <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {sampleProjects.map((project, index) => (
                 <FadeIn key={project.title} delay={200 + index * 100}>
                   <div className="bg-white rounded-xl overflow-hidden shadow-md h-full flex flex-col">
