@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -57,7 +56,6 @@ const Contact = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
-        {/* Hero Section */}
         <div className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-16">
           <Container>
             <FadeIn>
@@ -69,7 +67,6 @@ const Contact = () => {
           </Container>
         </div>
 
-        {/* Contact Information Section */}
         <div className="py-16">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -79,7 +76,7 @@ const Contact = () => {
                     <Phone className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">Call Us</h3>
-                  <p className="mt-2 text-lg text-gray-600">+91 9555893606</p>
+                  <p className="mt-2 text-lg text-gray-600">+91 6394944272</p>
                   <p className="mt-1 text-gray-500">Monday-Friday: 9AM-6PM IST</p>
                 </div>
               </FadeIn>
@@ -109,7 +106,6 @@ const Contact = () => {
           </Container>
         </div>
 
-        {/* Contact Form and Map Section */}
         <div className="py-16 bg-gray-50">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -238,7 +234,6 @@ const Contact = () => {
           </Container>
         </div>
 
-        {/* FAQ Section */}
         <div className="py-16">
           <Container>
             <FadeIn>

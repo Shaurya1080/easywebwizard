@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Container } from "@/components/ui/Container";
 import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
@@ -99,7 +98,7 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-gray-400 mr-3" />
-                <span className="text-sm text-gray-400">+91 9555893606</span>
+                <span className="text-sm text-gray-400">+91 6394944272</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-3" />

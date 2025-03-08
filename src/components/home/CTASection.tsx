@@ -46,7 +46,7 @@ export function CTASection() {
                   <div className="text-center">
                     <p className="text-white text-lg font-semibold">Get in Touch</p>
                     <p className="mt-2 text-gray-300">shauryasd123@gmail.com</p>
-                    <p className="mt-1 text-gray-300">+91 9555893606</p>
+                    <p className="mt-1 text-gray-300">+91 6394944272</p>
                     <p className="mt-1 text-gray-300">Sancoale, Goa</p>
                   </div>
                 </div>
