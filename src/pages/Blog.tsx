@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -34,7 +33,7 @@ const Blog = () => {
       readTime: "8 min read",
       views: "24.5K",
       trending: true,
-      image: "https://images.unsplash.com/photo-1677442135136-760c813029fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1677442135136-760c813029fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
@@ -46,7 +45,7 @@ const Blog = () => {
       readTime: "10 min read",
       views: "18.7K",
       trending: true,
-      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
@@ -58,7 +57,7 @@ const Blog = () => {
       readTime: "7 min read",
       views: "15.2K",
       trending: false,
-      image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://plus.unsplash.com/premium_photo-1681319553238-9860299dfb0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 4,
@@ -70,7 +69,7 @@ const Blog = () => {
       readTime: "9 min read",
       views: "21.8K",
       trending: true,
-      image: "https://images.unsplash.com/photo-1573152958734-1922c188fba3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1573152958734-1922c188fba3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 5,
@@ -82,7 +81,7 @@ const Blog = () => {
       readTime: "11 min read",
       views: "19.5K",
       trending: false,
-      image: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 6,
@@ -94,7 +93,7 @@ const Blog = () => {
       readTime: "8 min read",
       views: "16.3K",
       trending: false,
-      image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f5f01a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 7,
@@ -106,7 +105,7 @@ const Blog = () => {
       readTime: "9 min read",
       views: "22.1K",
       trending: true,
-      image: "https://images.unsplash.com/photo-1633422480514-15f6df57edee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1633422480514-15f6df57edee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 8,
@@ -118,11 +117,10 @@ const Blog = () => {
       readTime: "12 min read",
       views: "20.7K",
       trending: false,
-      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
-  // Filter blog posts based on search query and active category
   const filteredPosts = blogPosts.filter(post => {
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                          post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
@@ -134,7 +132,6 @@ const Blog = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-20">
-        {/* Hero Section */}
         <div className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-16">
           <Container>
             <FadeIn>
@@ -146,7 +143,6 @@ const Blog = () => {
           </Container>
         </div>
 
-        {/* Trending Section */}
         <div className="py-10 bg-gray-50">
           <Container>
             <div className="flex items-center mb-6">
@@ -196,7 +192,6 @@ const Blog = () => {
           </Container>
         </div>
 
-        {/* Search and Filter Section */}
         <div className="py-8 bg-white">
           <Container>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -232,7 +227,6 @@ const Blog = () => {
           </Container>
         </div>
 
-        {/* Blog Posts */}
         <div className="py-16">
           <Container>
             {filteredPosts.length > 0 ? (
@@ -310,7 +304,6 @@ const Blog = () => {
           </Container>
         </div>
 
-        {/* Newsletter Section */}
         <div className="bg-gray-50 py-16">
           <Container>
             <FadeIn>
