@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -87,7 +88,7 @@ const Contact = () => {
                     <Mail className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">Email Us</h3>
-                  <p className="mt-2 text-lg text-gray-600">shauryasd123@gmail.com</p>
+                  <p className="mt-2 text-lg text-gray-600">inquiries@pixelsync.in</p>
                   <p className="mt-1 text-gray-500">We'll respond within 24 hours</p>
                 </div>
               </FadeIn>

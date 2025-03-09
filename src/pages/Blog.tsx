@@ -6,19 +6,19 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { FadeIn } from "@/components/animations/FadeIn";
-import { Search, Calendar, User, ArrowRight } from "lucide-react";
+import { Search, Calendar, User, ArrowRight, TrendingUp, Eye } from "lucide-react";
 
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState("");
   
   const categories = [
     "All Topics",
-    "Cloud Computing",
-    "Cybersecurity",
-    "Software Development",
-    "IT Strategy",
-    "Artificial Intelligence",
-    "Data Analytics"
+    "AI & Machine Learning",
+    "Web3 & Blockchain",
+    "UX/UI Design",
+    "Mobile Development",
+    "Digital Marketing",
+    "Tech Trends"
   ];
   
   const [activeCategory, setActiveCategory] = useState("All Topics");
@@ -26,63 +26,99 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "The Future of Cloud Computing: Trends to Watch",
-      excerpt: "Explore the emerging trends in cloud computing that are shaping the future of IT infrastructure and business operations.",
-      date: "May 15, 2023",
-      author: "John Smith",
-      category: "Cloud Computing",
+      title: "How GPT-4 is Revolutionizing Content Creation for Businesses",
+      excerpt: "Discover how AI-powered tools like GPT-4 are transforming content strategies and enabling businesses to scale their content production with unprecedented efficiency.",
+      date: "June 12, 2023",
+      author: "Priya Sharma",
+      category: "AI & Machine Learning",
       readTime: "8 min read",
-      image: "https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      views: "24.5K",
+      trending: true,
+      image: "https://images.unsplash.com/photo-1677442135136-760c813029fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
-      title: "Cybersecurity Best Practices for Remote Work",
-      excerpt: "Learn how to protect your business data and systems as employees continue to work from home and hybrid environments.",
-      date: "April 28, 2023",
-      author: "Lisa Chen",
-      category: "Cybersecurity",
-      readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      title: "Web3 Applications That Are Changing How We Think About Digital Ownership",
+      excerpt: "Explore the innovative Web3 applications that are redefining digital ownership, from NFTs in gaming to decentralized social media platforms.",
+      date: "May 28, 2023",
+      author: "Arjun Patel",
+      category: "Web3 & Blockchain",
+      readTime: "10 min read",
+      views: "18.7K",
+      trending: true,
+      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
-      title: "How AI is Transforming IT Service Management",
-      excerpt: "Discover how artificial intelligence is revolutionizing IT service management and improving efficiency for businesses.",
-      date: "April 10, 2023",
-      author: "Mark Johnson",
-      category: "Artificial Intelligence",
-      readTime: "10 min read",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      title: "Minimalist UX Design: Why Less Continues to Be More in 2023",
+      excerpt: "Learn why minimalist UX design principles are still dominating the digital landscape and how implementing them can significantly improve user engagement.",
+      date: "May 15, 2023",
+      author: "Neha Gupta",
+      category: "UX/UI Design",
+      readTime: "7 min read",
+      views: "15.2K",
+      trending: false,
+      image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 4,
-      title: "The Role of DevOps in Modern Software Development",
-      excerpt: "Understand how DevOps practices are streamlining software development and delivery for faster time-to-market.",
-      date: "March 22, 2023",
-      author: "Sarah Williams",
-      category: "Software Development",
-      readTime: "7 min read",
-      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      title: "The Rise of Super Apps: What Businesses Can Learn from Asian Tech Giants",
+      excerpt: "Analyze the success of super apps in Asia and understand how Western businesses can apply these principles to create more integrated digital experiences.",
+      date: "April 30, 2023",
+      author: "Rajiv Mehta",
+      category: "Tech Trends",
+      readTime: "9 min read",
+      views: "21.8K",
+      trending: true,
+      image: "https://images.unsplash.com/photo-1573152958734-1922c188fba3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 5,
-      title: "Data Analytics: Turning Information into Business Insights",
-      excerpt: "Learn how data analytics can help your business make better decisions and gain a competitive advantage in your industry.",
-      date: "March 15, 2023",
-      author: "David Chen",
-      category: "Data Analytics",
-      readTime: "9 min read",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      title: "Cross-Platform Development in 2023: Flutter vs React Native",
+      excerpt: "A comprehensive comparison of Flutter and React Native in 2023, helping developers and businesses choose the right framework for their mobile app development needs.",
+      date: "April 22, 2023",
+      author: "Kiran Shah",
+      category: "Mobile Development",
+      readTime: "11 min read",
+      views: "19.5K",
+      trending: false,
+      image: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 6,
-      title: "Creating an Effective IT Strategy for Business Growth",
-      excerpt: "Discover the key components of a successful IT strategy that aligns with your business objectives and drives growth.",
-      date: "February 28, 2023",
-      author: "Jennifer Lee",
-      category: "IT Strategy",
+      title: "Content Atomization: How to Maximize Your Digital Marketing ROI",
+      excerpt: "Discover the strategy of content atomization and how breaking down complex content into smaller pieces can dramatically extend your reach and engagement.",
+      date: "April 10, 2023",
+      author: "Ananya Das",
+      category: "Digital Marketing",
       readTime: "8 min read",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      views: "16.3K",
+      trending: false,
+      image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f5f01a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 7,
+      title: "How Augmented Reality is Transforming E-commerce Experiences",
+      excerpt: "Explore the innovative ways augmented reality is enhancing online shopping experiences, reducing return rates, and increasing conversion for e-commerce businesses.",
+      date: "March 28, 2023",
+      author: "Vikram Choudhury",
+      category: "Tech Trends",
+      readTime: "9 min read",
+      views: "22.1K",
+      trending: true,
+      image: "https://images.unsplash.com/photo-1633422480514-15f6df57edee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 8,
+      title: "The Ethics of AI: Navigating Responsible Innovation in Technology",
+      excerpt: "A deep dive into the ethical considerations of implementing AI in business solutions and how companies can ensure they're developing AI responsibly.",
+      date: "March 15, 2023",
+      author: "Shreya Kapoor",
+      category: "AI & Machine Learning",
+      readTime: "12 min read",
+      views: "20.7K",
+      trending: false,
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -104,14 +140,64 @@ const Blog = () => {
             <FadeIn>
               <h1 className="text-4xl font-bold sm:text-5xl">Our Blog</h1>
               <p className="mt-6 text-xl text-blue-100 max-w-3xl">
-                Expert insights, industry trends, and practical advice on IT solutions and digital transformation.
+                Expert insights, industry trends, and cutting-edge thoughts on technology, design, and digital transformation.
               </p>
             </FadeIn>
           </Container>
         </div>
 
+        {/* Trending Section */}
+        <div className="py-10 bg-gray-50">
+          <Container>
+            <div className="flex items-center mb-6">
+              <TrendingUp className="h-6 w-6 text-red-500 mr-2" />
+              <h2 className="text-2xl font-bold text-gray-900">Trending Now</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {blogPosts
+                .filter(post => post.trending)
+                .slice(0, 4)
+                .map((post, index) => (
+                  <FadeIn key={post.id} delay={index * 100}>
+                    <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+                      <div className="h-40 overflow-hidden relative">
+                        <img 
+                          src={post.image} 
+                          alt={post.title}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 m-2 rounded-full flex items-center">
+                          <TrendingUp className="h-3 w-3 mr-1" />
+                          Trending
+                        </div>
+                      </div>
+                      <div className="p-4 flex-grow flex flex-col">
+                        <span className="inline-block px-2 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded-full mb-2">
+                          {post.category}
+                        </span>
+                        <h3 className="font-bold text-gray-900 line-clamp-2 mb-1">{post.title}</h3>
+                        <div className="flex items-center text-xs text-gray-500 mb-2">
+                          <Eye className="h-3 w-3 mr-1" />
+                          <span>{post.views} views</span>
+                          <span className="mx-2">•</span>
+                          <span>{post.readTime}</span>
+                        </div>
+                        <a 
+                          href="#" 
+                          className="mt-auto inline-flex items-center text-blue-600 text-sm font-medium hover:text-blue-800 transition-colors"
+                        >
+                          Read more <ArrowRight className="ml-1 h-3 w-3" />
+                        </a>
+                      </div>
+                    </div>
+                  </FadeIn>
+                ))}
+            </div>
+          </Container>
+        </div>
+
         {/* Search and Filter Section */}
-        <div className="py-8 bg-gray-50">
+        <div className="py-8 bg-white">
           <Container>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div className="relative md:w-96">
@@ -134,7 +220,7 @@ const Blog = () => {
                     className={`px-4 py-2 text-sm rounded-full transition-colors ${
                       activeCategory === category
                         ? "bg-blue-600 text-white"
-                        : "bg-white text-gray-600 hover:bg-gray-100"
+                        : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                     }`}
                     onClick={() => setActiveCategory(category)}
                   >
@@ -154,12 +240,18 @@ const Blog = () => {
                 {filteredPosts.map((post, index) => (
                   <FadeIn key={post.id} delay={index * 100}>
                     <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
-                      <div className="h-48 overflow-hidden">
+                      <div className="h-48 overflow-hidden relative">
                         <img 
                           src={post.image} 
                           alt={post.title}
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                         />
+                        {post.trending && (
+                          <div className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 m-2 rounded-full flex items-center">
+                            <TrendingUp className="h-3 w-3 mr-1" />
+                            Trending
+                          </div>
+                        )}
                       </div>
                       <div className="p-6 flex-grow flex flex-col">
                         <div className="flex-grow">
@@ -173,6 +265,10 @@ const Blog = () => {
                             <span className="mx-2">•</span>
                             <User className="h-4 w-4 mr-1" />
                             <span>{post.author}</span>
+                          </div>
+                          <div className="mt-1 flex items-center text-sm text-gray-500">
+                            <Eye className="h-4 w-4 mr-1" />
+                            <span>{post.views} views</span>
                             <span className="mx-2">•</span>
                             <span>{post.readTime}</span>
                           </div>
@@ -219,9 +315,9 @@ const Blog = () => {
           <Container>
             <FadeIn>
               <div className="max-w-2xl mx-auto text-center">
-                <h2 className="text-3xl font-bold text-gray-900">Subscribe to Our Newsletter</h2>
+                <h2 className="text-3xl font-bold text-gray-900">Stay Updated with Tech Trends</h2>
                 <p className="mt-4 text-lg text-gray-600">
-                  Stay updated with the latest insights and trends in IT. We'll send you our best articles directly to your inbox.
+                  Subscribe to our newsletter and get the latest insights, trends, and resources delivered directly to your inbox.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                   <Input

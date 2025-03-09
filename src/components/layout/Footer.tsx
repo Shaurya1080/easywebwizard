@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Container } from "@/components/ui/Container";
 import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
@@ -102,7 +103,7 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-3" />
-                <span className="text-sm text-gray-400">shauryasd123@gmail.com</span>
+                <span className="text-sm text-gray-400">inquiries@pixelsync.in</span>
               </li>
             </ul>
           </div>

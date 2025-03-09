@@ -17,6 +17,12 @@ export interface ContactFormData {
 
 export const submitContactForm = async (formData: ContactFormData) => {
   try {
+    // You can send a notification email to the company address here
+    // const notificationData = {
+    //   ...formData,
+    //   toEmail: "inquiries@pixelsync.in"
+    // };
+    
     const { data, error } = await supabase
       .from('contact_submissions')
       .insert([formData]);
