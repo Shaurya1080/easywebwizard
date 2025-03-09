@@ -48,6 +48,9 @@ export function CTASection() {
                     <p className="mt-2 text-gray-300">inquiries@pixelsync.in</p>
                     <p className="mt-1 text-gray-300">+91 6394944272</p>
                     <p className="mt-1 text-gray-300">Sancoale, Goa</p>
+                    <p className="mt-3 text-sm text-gray-400">
+                      <a href="https://pixelsync.in" className="hover:text-white">www.pixelsync.in</a>
+                    </p>
                   </div>
                 </div>
               </div>

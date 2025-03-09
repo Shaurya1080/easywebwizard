@@ -45,23 +45,24 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-6 lg:grid-cols-12">
           <div className="md:col-span-3 lg:col-span-4">
             <Link to="/" className="inline-block">
-              <span className="text-xl font-bold text-white">
-                Pixel Sync
-              </span>
+              <div className="flex items-center">
+                <span className="text-xl font-bold text-white">Pixel Sync</span>
+                <span className="ml-2 text-sm text-gray-400">pixelsync.in</span>
+              </div>
             </Link>
             <p className="mt-4 text-sm text-gray-400 max-w-xs">
               Empowering businesses through innovative digital solutions. We help you transform, scale, and secure your digital presence.
             </p>
             <div className="mt-6 flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://facebook.com/pixelsync.in" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
                 <span className="sr-only">Facebook</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://twitter.com/pixelsync_in" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://linkedin.com/company/pixelsync" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
               </a>
@@ -103,7 +104,7 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-3" />
-                <span className="text-sm text-gray-400">inquiries@pixelsync.in</span>
+                <a href="mailto:inquiries@pixelsync.in" className="text-sm text-gray-400 hover:text-white transition-colors">inquiries@pixelsync.in</a>
               </li>
             </ul>
           </div>
@@ -111,7 +112,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-gray-800 pt-8 flex flex-col md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-gray-400">
-            &copy; {currentYear} Pixel Sync. All rights reserved.
+            &copy; {currentYear} Pixel Sync. All rights reserved. | <a href="https://pixelsync.in" className="hover:text-white">pixelsync.in</a>
           </p>
           <div className="mt-4 md:mt-0">
             <p className="text-sm text-gray-400">

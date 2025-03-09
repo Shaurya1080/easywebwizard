@@ -45,6 +45,7 @@ export function Navbar() {
               <span className="text-2xl font-bold text-white">
                 Pixel Sync
               </span>
+              <span className="text-sm text-gray-300">pixelsync.in</span>
             </Link>
           </div>
 
