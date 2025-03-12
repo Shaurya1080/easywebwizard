@@ -5,10 +5,10 @@
 command = "npm install && npm run build"
 
 [site]
-bucket = "dist"
+bucket = "./dist"
 
 [build.environment]
 NODE_VERSION = "18"
 
 # New Pages configuration syntax
-pages_build_output_dir = "dist"
+pages_build_output_dir = "./dist"
