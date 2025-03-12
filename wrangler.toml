@@ -2,5 +2,11 @@
 # Cloudflare Pages configuration
 
 [build]
-command = "bun install && npm run build"
+command = "npm install && npm run build"
 output_directory = "dist"
+
+[site]
+bucket = "dist"
+
+[build.environment]
+NODE_VERSION = "18"
