@@ -1,0 +1,6 @@
+
+# Cloudflare Pages configuration
+
+[build]
+command = "bun install && npm run build"
+output_directory = "dist"
