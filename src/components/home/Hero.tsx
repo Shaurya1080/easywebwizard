@@ -35,12 +35,12 @@ export function Hero() {
             <div className="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
               <Link to="/contact">
                 <Button size="lg" className="rounded-md text-base bg-purple-600 hover:bg-purple-700">
-                  Get a Free Consultation
+                  Get Started with IT Services
                 </Button>
               </Link>
               <Link to="/services">
                 <Button size="lg" className="rounded-md text-base bg-purple-600 hover:bg-purple-700">
-                  Explore Our Services
+                  Explore Our Solutions
                 </Button>
               </Link>
             </div>

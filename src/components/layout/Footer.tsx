@@ -51,7 +51,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="mt-4 text-sm text-gray-400 max-w-xs">
-              Empowering businesses through innovative digital solutions. We help you transform, scale, and secure your digital presence.
+              Empowering businesses through innovative IT services and solutions. We help you transform, scale, and secure your digital presence.
             </p>
             <div className="mt-6 flex space-x-4">
               <a href="https://facebook.com/pixelsync.in" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">

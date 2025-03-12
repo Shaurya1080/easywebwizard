@@ -62,7 +62,7 @@ const Contact = () => {
             <FadeIn>
               <h1 className="text-4xl font-bold sm:text-5xl">Contact Us</h1>
               <p className="mt-6 text-xl text-blue-100 max-w-3xl">
-                Have questions about our IT services? Get in touch with our team of experts for personalized assistance.
+                Have questions about our IT services and solutions? Get in touch with our team of experts for personalized assistance.
               </p>
             </FadeIn>
           </Container>
@@ -114,7 +114,7 @@ const Contact = () => {
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900">Get in Touch</h2>
                   <p className="mt-4 text-lg text-gray-600">
-                    Fill out the form below, and one of our experts will get back to you promptly.
+                    Fill out the form below, and one of our IT experts will get back to you promptly.
                   </p>
 
                   <div className="mt-8 space-y-4">
@@ -124,7 +124,7 @@ const Contact = () => {
                     </div>
                     <div className="flex items-center">
                       <Users className="h-5 w-5 text-blue-600 mr-3" />
-                      <span className="text-gray-600">Expert consultants</span>
+                      <span className="text-gray-600">Expert IT consultants</span>
                     </div>
                     <div className="flex items-center">
                       <MessageSquare className="h-5 w-5 text-blue-600 mr-3" />
@@ -293,6 +293,6 @@ const Contact = () => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Contact;

@@ -68,7 +68,7 @@ export function Navbar() {
 
           <div className="hidden md:flex md:items-center">
             <Link to="/contact">
-              <Button className="rounded-md">Get a Free Consultation</Button>
+              <Button className="rounded-md">Get IT Services & Solutions</Button>
             </Link>
           </div>
 
@@ -104,7 +104,7 @@ export function Navbar() {
               ))}
               <div className="pt-3">
                 <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button className="w-full">Get a Free Consultation</Button>
+                  <Button className="w-full">Get IT Services & Solutions</Button>
                 </Link>
               </div>
             </div>

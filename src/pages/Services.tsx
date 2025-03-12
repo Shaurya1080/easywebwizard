@@ -127,7 +127,7 @@ const Services = () => {
             <FadeIn>
               <h1 className="text-4xl font-bold sm:text-5xl">Our Services</h1>
               <p className="mt-6 text-xl text-gray-300 max-w-3xl">
-                Specialized digital solutions to help your business thrive in today's competitive marketplace. We focus on delivering quality and innovation in everything we do.
+                Specialized IT services and solutions to help your business thrive in today's competitive marketplace. We focus on delivering quality and innovation in everything we do.
               </p>
             </FadeIn>
           </Container>

@@ -85,7 +85,7 @@ export function CTASection() {
             </FadeIn>
             <FadeIn delay={100}>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Contact us today for a free consultation and discover how our solutions can drive your business forward.
+                Contact us today for our IT services and solutions and discover how we can drive your business forward.
               </p>
             </FadeIn>
             <FadeIn delay={200}>
