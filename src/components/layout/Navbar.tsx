@@ -42,7 +42,12 @@ export function Navbar() {
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-bold text-white">
+              <img 
+                src="/lovable-uploads/8e9729e2-5d51-403a-9f09-470eaacd0ae9.png" 
+                alt="Pixel Sync Logo" 
+                className="h-10 w-auto" 
+              />
+              <span className="text-2xl font-bold text-black">
                 Pixel Sync
               </span>
             </Link>

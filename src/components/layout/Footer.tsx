@@ -46,6 +46,11 @@ export function Footer() {
           <div className="md:col-span-3 lg:col-span-4">
             <Link to="/" className="inline-block">
               <div className="flex items-center">
+                <img 
+                  src="/lovable-uploads/8e9729e2-5d51-403a-9f09-470eaacd0ae9.png" 
+                  alt="Pixel Sync Logo" 
+                  className="h-10 w-auto mr-3" 
+                />
                 <span className="text-xl font-bold text-white">Pixel Sync</span>
                 <span className="ml-2 text-sm text-gray-400">pixelsync.in</span>
               </div>
