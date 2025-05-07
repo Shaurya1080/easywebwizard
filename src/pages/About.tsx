@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
@@ -20,12 +19,6 @@ const About = () => {
       position: "Co-Founder",
       bio: "Khushi brings creative direction and business acumen to Pixel Sync, helping shape our client-centered approach to digital solutions.",
       image: "/lovable-uploads/10fa6faa-06eb-407d-9c06-a2d82b8a446b.png"
-    },
-    {
-      name: "Aradhyaa Maavi",
-      position: "Marketing Head",
-      bio: "Aradhyaa drives our marketing initiatives with innovative strategies that connect our solutions with businesses seeking digital transformation.",
-      image: "/lovable-uploads/e4d20f0a-92c6-4dee-bb94-0c2f12093413.png"
     }
   ];
 
@@ -220,7 +213,7 @@ const About = () => {
               </div>
             </FadeIn>
 
-            <div className="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-3">
+            <div className="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2">
               {leadershipTeam.map((member, index) => (
                 <FadeIn key={member.name} delay={200 + index * 100}>
                   <div className="text-center">
